@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가계부</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Chai Cashbook</h1>
+
+  <!-- 월별 탭 -->
+  <div id="monthTabs">
+    <button data-month="0">전체</button>
+    <button data-month="1">1월</button>
+    <button data-month="2">2월</button>
+    <button data-month="3">3월</button>
+    <button data-month="4">4월</button>
+    <button data-month="5">5월</button>
+    <button data-month="6">6월</button>
+    <button data-month="7">7월</button>
+    <button data-month="8">8월</button>
+    <button data-month="9">9월</button>
+    <button data-month="10">10월</button>
+    <button data-month="11">11월</button>
+    <button data-month="12">12월</button>
+  </div>
+  <p id="totalSum"><strong>총 지출:</strong> 0원</p>
+  <!-- 입력 폼 -->
+  <form id="expenseForm">
+    <input type="text" id="item" placeholder="지출 항목" required>
+    <input type="number" id="amount" placeholder="금액 (₩)" required>
+
+    <select id="card" required>
+      <option value="">카드사 선택</option>
+      <option value="삼성">삼성</option>
+      <option value="현대">현대</option>
+      <option value="우리">우리</option>
+      <option value="국민">국민</option>
+      <option value="농협">농협</option>
+    </select>
+
+    <select id="category" required>
+      <option value="">카테고리 선택</option>
+      <option value="고정지출">고정지출</option>
+      <option value="생활비">생활비</option>
+      <option value="식비">식비</option>
+      <option value="쇼핑">쇼핑</option>
+    </select>
+
+    <!-- 할부 -->
+    <select id="installmentType" required>
+      <option value="일시불">일시불</option>
+      <option value="할부">할부</option>
+    </select>
+
+    <input type="number" id="installmentMonths" placeholder="할부 개월 수 (2~12)" min="2" max="12" disabled>
+
+    <button type="submit">저장</button>
+  </form>
+
+  <!-- 출력 영역 -->
+  <h2>지출 목록</h2>
+  <ul id="expenseList"></ul>
+
+  <h2>카테고리별 합계</h2>
+  <ul id="categoryTotals"></ul>
+
+  <h2>카드사별 합계</h2>
+  <ul id="cardTotals"></ul>
+
+
+  <script src="app.js"></script>
+</body>
+</html>

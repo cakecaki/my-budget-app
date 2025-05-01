@@ -1,0 +1,132 @@
+body {
+  font-family: 'Arial', sans-serif;
+  background: #fceaea;
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+h1{
+  text-align: center;
+  color: #9e7f7f;
+  font-size: 40px;
+  text-emphasis:inherit;
+}
+
+h2 {
+    text-align: center;
+    color: #9e7f7f;
+    text-decoration-line: underline;
+  }
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+input, select, button {
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  border: 1px solid #fab3b3;
+}
+
+button {
+  background-color: #fab3b3;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  background: white;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li button {
+  background: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#monthTabs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+#monthTabs button {
+  padding: 5px 8px;
+  font-size: 14px;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: rgb(136, 190, 245);
+}
+
+#monthTabs button.active {
+  background-color: #fab3b3;
+  color: white;
+  border: 2px solid #ffffff;
+  font-weight: bold;
+}
+
+/* 총지출 텍스트 색상 */
+#totalSum {
+    color: #9e7f7f; /* 진한 남색 */
+  }
+  
+/* 카드사 선택 드롭다운 색상 */
+#card {
+    color: #9e7f7f; /* 어두운 회색 */
+  }
+  
+/* 카테고리 드롭다운 색상 */
+#category {
+    color: #9e7f7f; /* 진한 초록색 */
+  }
+
+  #installmentType {
+    color: #9e7f7f;  /* 예시: 딥블루 톤 */
+    background-color: #white; /* 연한 파란 배경 (선택 사항) */
+  }
+  
+/* 지출 항목 (text 입력창) */
+#item {
+    color: #9e7f7f !important;
+    background-color: white;
+    -webkit-text-fill-color: #9e7f7f !important;  /* Safari 대응 */
+  }
+  
+  /* 금액 (number 입력창) */
+  #amount {
+    color: #9e7f7f !important;
+    background-color: white;
+    -webkit-text-fill-color: #9e7f7f !important;  /* Safari 대응 */
+  }
+  
+  /* 할부개월 (number 입력창) */
+  #installmentMonths {
+    color: #9e7f7f !important;
+    -webkit-text-fill-color: #9e7f7f !important;  /* Safari 대응 */
+    background-color: white;
+  }
+    
